@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -18,7 +18,9 @@
     "jsx": "react-jsx",
     "paths": {
       "@app/*": ["app/*"],
-      "@components/*": ["components/*"]
+      "@pages/*": ["src/pages/*"],
+      "@entities/*": ["src/entities/*"],
+      "@shared/*": ["src/shared/*"]
     }
   },
   "include": ["src"],
