@@ -3,10 +3,14 @@
   height: 100%;
   position: relative;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .front,
 .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
