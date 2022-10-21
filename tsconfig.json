@@ -20,6 +20,7 @@
       "@app/*": ["app/*"],
       "@pages/*": ["src/pages/*"],
       "@entities/*": ["src/entities/*"],
+      "@model": ["src/model"],
       "@shared/*": ["src/shared/*"]
     }
   },
