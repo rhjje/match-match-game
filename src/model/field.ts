@@ -1,4 +1,4 @@
-import { createStore, sample } from 'effector';
+import { createEvent, createStore, sample } from 'effector';
 import { Christmas, IconProps } from '@shared/ui';
 import { createGate } from 'effector-react';
 import { v4 as uuidv4 } from 'uuid';
@@ -14,6 +14,8 @@ interface FieldElementsI {
 }
 
 const FieldGate = createGate<FieldGateProps>();
+
+const toggleCellState = createEvent<string>();
 
 const $fieldElements = createStore<FieldElementsI[]>([]);
 
@@ -44,7 +46,18 @@ sample({
   target: $fieldElements,
 });
 
+sample({
+  source: $fieldElements,
+  clock: toggleCellState,
+  fn: (source, clock) =>
+    source.map((item) =>
+      item.id === clock ? { ...item, state: !item.state } : item,
+    ),
+  target: $fieldElements,
+});
+
 export const model = {
   FieldGate,
+  toggleCellState,
   $fieldElements,
 };

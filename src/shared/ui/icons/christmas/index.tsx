@@ -15,8 +15,8 @@ export namespace Christmas {
           d="M344,768l23.669-23.669L344,720.663"
           fill="#fbb141"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_56"
@@ -24,8 +24,8 @@ export namespace Christmas {
           d="M321,711c-.755,0-1.5.034-2.243.084a23.007,23.007,0,0,1-30.673,30.673c-.05.742-.084,1.488-.084,2.243a33,33,0,1,0,33-33Z"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <g id="Group_4" data-name="Group 4">
           <path
@@ -42,9 +42,9 @@ export namespace Christmas {
           transform="translate(321 777)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_18"
@@ -53,9 +53,9 @@ export namespace Christmas {
           transform="translate(321 790)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_60"
@@ -63,8 +63,8 @@ export namespace Christmas {
           d="M345.974,722.442a23.005,23.005,0,0,0,0,43.116,32.966,32.966,0,0,0,0-43.116Z"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-miterlimit="10"
-          stroke-width="4"
+          strokeMiterlimit="10"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -86,9 +86,9 @@ export namespace Christmas {
           transform="translate(181 707)"
           fill="#5aade0"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_54"
@@ -96,9 +96,9 @@ export namespace Christmas {
           d="M159,709l-36,33v48h72V741Z"
           fill="#5aade0"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_55"
@@ -108,9 +108,9 @@ export namespace Christmas {
           transform="translate(148 765)"
           fill="#ebf4f7"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_60"
@@ -121,8 +121,8 @@ export namespace Christmas {
           transform="translate(144 755)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_61"
@@ -133,8 +133,8 @@ export namespace Christmas {
           transform="translate(177 698)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_58"
@@ -142,8 +142,8 @@ export namespace Christmas {
           d="M202,736.858l-35.929-35.929a10,10,0,0,0-14.142,0L116,736.858a9.978,9.978,0,0,0-2.878,8.067A5.009,5.009,0,0,0,113,746v20a5,5,0,0,0,10,0v-8a5,5,0,0,0,10,0v-9.858l26-26L187.858,751A10,10,0,0,0,202,736.858Z"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_15"
@@ -152,9 +152,9 @@ export namespace Christmas {
           transform="translate(123 751)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -174,9 +174,9 @@ export namespace Christmas {
           d="M523.99,932,482,879.393,440.01,932Z"
           fill="#32aa77"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_53"
@@ -186,9 +186,9 @@ export namespace Christmas {
           transform="translate(469 932)"
           fill="#9b8772"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_62"
@@ -196,9 +196,9 @@ export namespace Christmas {
           d="M516,908l-34-42.6L448,908Z"
           fill="#32aa77"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_63"
@@ -206,9 +206,9 @@ export namespace Christmas {
           d="M507,885l-25-31-25,31Z"
           fill="#32aa77"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -228,9 +228,9 @@ export namespace Christmas {
           d="M164,1018v29.526a11.52,11.52,0,0,1-11.5,11.632,11.52,11.52,0,0,0-11.5,11.631V1086h64v-68Z"
           fill="#ebf4f7"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <g id="Group_6" data-name="Group 6">
           <path
@@ -239,9 +239,9 @@ export namespace Christmas {
             d="M205,1086v-27c-14.32,0-26.8,12.637-26.8,26.956C184.667,1085.956,205,1086,205,1086Z"
             fill="#5aade0"
             stroke="#2d4d68"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="4"
           />
         </g>
         <path
@@ -250,9 +250,9 @@ export namespace Christmas {
           d="M131,1066a18,18,0,0,0,0,36h74"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_19"
@@ -261,9 +261,9 @@ export namespace Christmas {
           transform="translate(190 1086)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_20"
@@ -272,9 +272,9 @@ export namespace Christmas {
           transform="translate(145 1086)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_65"
@@ -284,9 +284,9 @@ export namespace Christmas {
           transform="translate(164 1018)"
           fill="#5aade0"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -313,9 +313,9 @@ export namespace Christmas {
           transform="translate(460 1058)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_11"
@@ -326,9 +326,9 @@ export namespace Christmas {
           transform="translate(482 1058)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_64"
@@ -336,9 +336,9 @@ export namespace Christmas {
           d="M521.724,1020.351a12.33,12.33,0,0,1,1.645-6.155,12.38,12.38,0,0,1-16.385-3.749,12.4,12.4,0,0,1-12.324,11.032c-.2,0-.4-.021-.594-.03.009.2.03.393.03.594a12.4,12.4,0,0,1-10.412,12.23,12.366,12.366,0,0,1,4.35,16.761,12.378,12.378,0,0,1,16.385,3.748,12.4,12.4,0,0,1,12.325-11.031c.2,0,.395.02.593.03-.009-.2-.03-.394-.03-.594a12.4,12.4,0,0,1,10.413-12.23A12.386,12.386,0,0,1,521.724,1020.351Z"
           fill="#32aa77"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_65"
@@ -346,9 +346,9 @@ export namespace Christmas {
           d="M442.679,1020.351a12.33,12.33,0,0,0-1.645-6.155,12.38,12.38,0,0,0,16.385-3.749,12.4,12.4,0,0,0,12.325,11.032c.2,0,.4-.021.593-.03-.009.2-.03.393-.03.594a12.4,12.4,0,0,0,10.413,12.23,12.365,12.365,0,0,0-4.351,16.761,12.378,12.378,0,0,0-16.385,3.748,12.4,12.4,0,0,0-12.324-11.031c-.2,0-.4.02-.594.03.009-.2.03-.394.03-.594a12.4,12.4,0,0,0-10.412-12.23A12.387,12.387,0,0,0,442.679,1020.351Z"
           fill="#32aa77"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_14"
@@ -359,9 +359,9 @@ export namespace Christmas {
           transform="translate(471 1078)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -381,8 +381,8 @@ export namespace Christmas {
           d="M449,730v19a15,15,0,0,0,9,13.744V780a10,10,0,0,0,10,10h28a10,10,0,0,0,10-10V762.744A15,15,0,0,0,515,749V730Z"
           fill="#ffeecd"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_52"
@@ -390,8 +390,8 @@ export namespace Christmas {
           d="M459,764h-1v16a10,10,0,0,0,10,10h1V774A10,10,0,0,0,459,764Z"
           fill="#c17a61"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_53"
@@ -399,8 +399,8 @@ export namespace Christmas {
           d="M505,764h1v16a10,10,0,0,1-10,10h-1V774A10,10,0,0,1,505,764Z"
           fill="#c17a61"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_12"
@@ -411,9 +411,9 @@ export namespace Christmas {
           transform="translate(482 731)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_13"
@@ -424,9 +424,9 @@ export namespace Christmas {
           transform="translate(460 731)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_66"
@@ -434,8 +434,8 @@ export namespace Christmas {
           d="M523,710H504v2a9.973,9.973,0,0,1-4.016,8l.016,0h-.018a9.942,9.942,0,0,1-5.64,1.983l-.015.017H469.673l-.015-.017a9.942,9.942,0,0,1-5.64-1.983H464l.016,0A9.973,9.973,0,0,1,460,712v-2H441a5,5,0,0,0,0,10h6a5,5,0,0,0,0,10h11.222a26.6,26.6,0,0,0,3.278,0A15.5,15.5,0,0,1,477,745.5c0,.506-.028,1.006-.076,1.5H477v13.7a5,5,0,0,0,10,0V747h.076c-.048-.494-.076-.994-.076-1.5A15.5,15.5,0,0,1,502.5,730a26.6,26.6,0,0,0,3.278,0H517a5,5,0,0,0,0-10h6a5,5,0,0,0,0-10Z"
           fill="#9b8772"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_64"
@@ -446,8 +446,8 @@ export namespace Christmas {
           transform="translate(477 744)"
           fill="#fbb141"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -472,8 +472,8 @@ export namespace Christmas {
           transform="translate(348.302 1018.585) rotate(135)"
           fill="#5aade0"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_66"
@@ -483,8 +483,8 @@ export namespace Christmas {
           transform="translate(294.209 1050.435) rotate(-45)"
           fill="#ebf4f7"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Rectangle_67"
@@ -493,8 +493,8 @@ export namespace Christmas {
           transform="translate(369.535 1039.818) rotate(135)"
           fill="#5aade0"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_68"
@@ -504,8 +504,8 @@ export namespace Christmas {
           transform="translate(315.442 1071.668) rotate(-45)"
           fill="#ebf4f7"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -526,9 +526,9 @@ export namespace Christmas {
           transform="translate(643 854)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_72"
@@ -536,9 +536,9 @@ export namespace Christmas {
           d="M632,878v11H621"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_73"
@@ -546,9 +546,9 @@ export namespace Christmas {
           d="M654,878v11h11"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_74"
@@ -556,9 +556,9 @@ export namespace Christmas {
           d="M622,868v11H611"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_75"
@@ -566,9 +566,9 @@ export namespace Christmas {
           d="M664,868v11h11"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_22"
@@ -578,9 +578,9 @@ export namespace Christmas {
           transform="translate(621 878)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_23"
@@ -590,9 +590,9 @@ export namespace Christmas {
           transform="translate(650 878)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_76"
@@ -600,9 +600,9 @@ export namespace Christmas {
           d="M628,861l15,15,15-15"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_24"
@@ -611,9 +611,9 @@ export namespace Christmas {
           transform="translate(653 900)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_77"
@@ -621,9 +621,9 @@ export namespace Christmas {
           d="M682,885l-15,15,15,15"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_25"
@@ -632,9 +632,9 @@ export namespace Christmas {
           transform="translate(597 900)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_78"
@@ -642,9 +642,9 @@ export namespace Christmas {
           d="M604,915l15-15-15-15"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_26"
@@ -653,9 +653,9 @@ export namespace Christmas {
           transform="translate(643 911)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_79"
@@ -663,9 +663,9 @@ export namespace Christmas {
           d="M654,923V912h11"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_80"
@@ -673,9 +673,9 @@ export namespace Christmas {
           d="M632,923V912H621"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_81"
@@ -683,9 +683,9 @@ export namespace Christmas {
           d="M664,933V922h11"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_82"
@@ -693,9 +693,9 @@ export namespace Christmas {
           d="M622,933V922H611"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_27"
@@ -705,9 +705,9 @@ export namespace Christmas {
           transform="translate(650 908)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_28"
@@ -717,9 +717,9 @@ export namespace Christmas {
           transform="translate(621 908)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_83"
@@ -727,9 +727,9 @@ export namespace Christmas {
           d="M658,940l-15-15-15,15"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_15"
@@ -740,9 +740,9 @@ export namespace Christmas {
           transform="translate(632 889)"
           fill="#aae1ed"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -765,8 +765,8 @@ export namespace Christmas {
           transform="translate(125 878)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_58"
@@ -777,8 +777,8 @@ export namespace Christmas {
           transform="translate(154 912)"
           fill="#f6941d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_62"
@@ -789,8 +789,8 @@ export namespace Christmas {
           transform="translate(113 877)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <line
           id="Line_16"
@@ -799,9 +799,9 @@ export namespace Christmas {
           transform="translate(135 911)"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_59"
@@ -809,9 +809,9 @@ export namespace Christmas {
           d="M143,919a16,16,0,0,0,16,16"
           fill="none"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Rectangle_63"
@@ -820,8 +820,8 @@ export namespace Christmas {
           transform="translate(135 854)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -844,8 +844,8 @@ export namespace Christmas {
           transform="translate(292 888)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_8"
@@ -856,8 +856,8 @@ export namespace Christmas {
           transform="translate(298 854)"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_56"
@@ -868,8 +868,8 @@ export namespace Christmas {
           transform="translate(297 890)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <rect
           id="Rectangle_57"
@@ -880,8 +880,8 @@ export namespace Christmas {
           transform="translate(350 890) rotate(90)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <circle
           id="Ellipse_10"
@@ -892,9 +892,9 @@ export namespace Christmas {
           transform="translate(334 884)"
           fill="#ff514d"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -918,9 +918,9 @@ export namespace Christmas {
           d="M689,1042.07l-17.775-31.362-51.137,91.34H689Z"
           fill="#aae1ed"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_49"
@@ -928,9 +928,9 @@ export namespace Christmas {
           d="M657.575,1035.091l13.967,28.177,13.7-27.831-14.016-24.73Z"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_67"
@@ -938,9 +938,9 @@ export namespace Christmas {
           d="M667.994,1102.047l-35.67-62.936-35.235,62.936Z"
           fill="#aae1ed"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
         <path
           id="Path_68"
@@ -948,9 +948,9 @@ export namespace Christmas {
           d="M622.918,1055.912l9.624,18.525,9.44-18.286-9.658-17.04Z"
           fill="#fff"
           stroke="#2d4d68"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="4"
         />
       </g>
     </svg>
@@ -975,9 +975,9 @@ export namespace Christmas {
             d="M687.689,737.222,667.74,756.675l4.727,27.475a8.46,8.46,0,0,1,.048,1.1c0,1.426-.657,2.748-2.251,2.748a4.444,4.444,0,0,1-2.2-.661l-24.676-12.971-24.676,12.971a4.622,4.622,0,0,1-2.2.661c-1.594,0-2.307-1.322-2.307-2.748a8.559,8.559,0,0,1,.1-1.1l4.727-27.475-20.005-19.453a4.292,4.292,0,0,1-1.37-2.639c0-1.651,1.706-2.308,3.076-2.528l27.592-4.014,12.362-25c.5-1.042,1.426-2.251,2.692-2.251s2.2,1.209,2.692,2.251l12.362,25,27.592,4.014c1.322.22,3.076.877,3.076,2.528A4.1,4.1,0,0,1,687.689,737.222Z"
             fill="#fbb141"
             stroke="#2d4d68"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="4"
           />
         </g>
       </g>

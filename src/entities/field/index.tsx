@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Christmas } from '@shared/ui';
+import { Christmas, Covers } from '@shared/ui';
 import { Cell } from '@shared/ui';
 import { useUnit } from 'effector-react';
 import { useGate } from 'effector-react';
@@ -22,8 +22,8 @@ export const Field = ({ size }: FieldProps) => {
         return (
           <Cell
             key={id}
-            onClick={() => {}}
-            cover={<Christmas.House />}
+            onClick={() => fieldModel.toggleCellState(id)}
+            cover={<Covers.Question />}
             icon={<Icon />}
             active={state}
           />
