@@ -1,7 +1,7 @@
 import { createEvent, createStore, sample } from 'effector';
 import { Christmas, IconProps } from '@shared/ui';
 import { createGate } from 'effector-react';
-import { debounce } from 'patronum';
+import { debounce, reset } from 'patronum';
 import { v4 as uuidv4 } from 'uuid';
 
 interface FieldGateProps {
@@ -20,8 +20,12 @@ const FieldGate = createGate<FieldGateProps>();
 
 const toggleCellState = createEvent<string>();
 const resetOpenCells = createEvent();
+const startNewGame = createEvent();
+const addMove = createEvent();
 
 const $fieldElements = createStore<FieldElementsI[]>([]);
+const $pairsMatched = createStore(0);
+const $totalMoves = createStore(0);
 
 const debouncedResetOpenCells = debounce({
   source: resetOpenCells,
@@ -29,7 +33,8 @@ const debouncedResetOpenCells = debounce({
 });
 
 sample({
-  clock: FieldGate.open,
+  source: FieldGate.state,
+  clock: [FieldGate.open, startNewGame],
   fn: ({ size }) => {
     const arrayOfIcons = Object.keys(Christmas)
       .map((key) => ({
@@ -76,7 +81,7 @@ sample({
 sample({
   clock: $fieldElements,
   filter: (source) => source.filter((item) => item.open).length === 2,
-  target: resetOpenCells,
+  target: [resetOpenCells, addMove],
 });
 
 sample({
@@ -94,8 +99,30 @@ sample({
   target: $fieldElements,
 });
 
+sample({
+  clock: $fieldElements,
+  filter: (clock) => !(clock.filter((cell) => cell.disabled).length % 2),
+  fn: (clock) => clock.filter((cell) => cell.disabled).length / 2,
+  target: $pairsMatched,
+});
+
+sample({
+  source: $totalMoves,
+  clock: addMove,
+  fn: (source) => source + 1,
+  target: $totalMoves,
+});
+
+reset({
+  clock: startNewGame,
+  target: $totalMoves,
+});
+
 export const model = {
   FieldGate,
   toggleCellState,
+  startNewGame,
   $fieldElements,
+  $pairsMatched,
+  $totalMoves,
 };

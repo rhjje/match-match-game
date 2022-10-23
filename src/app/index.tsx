@@ -1,11 +1,6 @@
-import { Field } from '@entities/field';
+import { GamePage } from '@pages/game';
+import './global.scss';
 
-function App() {
-  return (
-    <div style={{ width: '500px', height: '500px' }}>
-      <Field size={16} />
-    </div>
-  );
-}
-
-export { App };
+export const App = () => {
+  return <GamePage />;
+};
