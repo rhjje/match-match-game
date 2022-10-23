@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Christmas, Covers } from '@shared/ui';
+import { Covers } from '@shared/ui';
 import { Cell } from '@shared/ui';
 import { useUnit } from 'effector-react';
 import { useGate } from 'effector-react';
@@ -17,15 +17,16 @@ export const Field = ({ size }: FieldProps) => {
 
   return (
     <div className={classNames(styles.field, styles[`size${size}`])}>
-      {fieldElements.map(({ id, icon, state }) => {
+      {fieldElements.map(({ id, icon, open, disabled }) => {
         const Icon = icon;
         return (
           <Cell
             key={id}
             onClick={() => fieldModel.toggleCellState(id)}
-            cover={<Covers.Question />}
+            cover={disabled ? <Icon /> : <Covers.Question />}
             icon={<Icon />}
-            active={state}
+            active={open}
+            disabled={disabled}
           />
         );
       })}
