@@ -1,0 +1,13 @@
+.button {
+  background-color: var(--gray);
+  color: var(--text-black);
+  border-radius: 6px;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  transition: var(--trans-fast);
+
+  &:hover {
+    background-color: var(--gray-hover);
+  }
+}

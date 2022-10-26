@@ -1,5 +1,5 @@
 import { GamePage } from '@pages/game';
-import './global.scss';
+import '@shared/lib/styles/app.scss';
 
 export const App = () => {
   return <GamePage />;
