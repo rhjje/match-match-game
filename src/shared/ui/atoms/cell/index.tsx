@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes, ReactElement } from 'react';
+
 import classNames from 'classnames';
+
 import styles from './styles.module.scss';
 
 interface CellProps extends ButtonHTMLAttributes<HTMLButtonElement> {

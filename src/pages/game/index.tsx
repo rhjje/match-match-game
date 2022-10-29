@@ -1,7 +1,11 @@
-import { Field } from '@entities/field';
-import { Button } from '@shared/ui';
-import { fieldModel } from '@model';
 import { useUnit } from 'effector-react';
+
+import { Field } from '@entities/field';
+
+import { Button } from '@shared/ui';
+
+import { fieldModel } from '@model';
+
 import styles from './styles.module.scss';
 
 export const GamePage = () => {

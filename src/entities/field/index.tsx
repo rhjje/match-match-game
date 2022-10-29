@@ -1,9 +1,13 @@
+import React from 'react';
+
 import classNames from 'classnames';
-import { Covers } from '@shared/ui';
-import { Cell } from '@shared/ui';
 import { useUnit } from 'effector-react';
 import { useGate } from 'effector-react';
+
+import { Cell, Covers } from '@shared/ui';
+
 import { fieldModel } from '@model';
+
 import styles from './styles.module.scss';
 
 interface FieldProps {

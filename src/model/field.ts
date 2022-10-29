@@ -1,8 +1,9 @@
 import { createEvent, createStore, sample } from 'effector';
-import { Christmas, IconProps } from '@shared/ui';
 import { createGate } from 'effector-react';
 import { debounce, reset } from 'patronum';
 import { v4 as uuidv4 } from 'uuid';
+
+import { Christmas, IconProps } from '@shared/ui';
 
 interface FieldGateProps {
   size: number;
