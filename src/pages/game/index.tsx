@@ -1,5 +1,6 @@
 import { useUnit } from 'effector-react';
 
+import { InfoCard } from '@entities/info-card';
 import { Field } from '@entities/field';
 
 import { Button } from '@shared/ui';
@@ -15,13 +16,18 @@ export const GamePage = () => {
   return (
     <div className={styles.game}>
       <div className={styles.info}>
-        <div className={styles.column}>
-          Pairs matched {pairsMatched}/{16 / 2}
-        </div>
-        <div className={styles.column}>Total moves {totalMoves}</div>
-        <div className={styles.column}></div>
+        <InfoCard
+          title="Pairs matched"
+          currentCount={pairsMatched}
+          endCounter={16 / 2}
+        />
+        <InfoCard title="Total moves" currentCount={totalMoves} />
       </div>
-      <Field size={16} />
+
+      <div className={styles.fieldWrapper}>
+        <Field size={16} />
+      </div>
+
       <div className={styles.buttons}>
         <Button onClick={() => fieldModel.startNewGame()}>New Game</Button>
       </div>

@@ -14,7 +14,7 @@ export const Button = ({ children, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
-      className={classNames(styles.button, textStyles.buttonText)}
+      className={classNames(styles.button, textStyles.text13Regular)}
       type="button"
     >
       {children}

@@ -1,0 +1,23 @@
+.infoCard {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  padding: 16px 8px 8px;
+  overflow: hidden;
+}
+
+.progressBar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 8px;
+  background-color: var(--green);
+  border-radius: 6px 4px 4px 0;
+  transition: width var(--trans-fast);
+}
+
+.completeProgressBar {
+  border-radius: 6px 6px 0px 0;
+}

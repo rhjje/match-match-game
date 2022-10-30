@@ -3,7 +3,20 @@
   height: 100%;
   position: relative;
   perspective: 1000px;
-  cursor: pointer;
+  background-color: var(--gray);
+  border: none;
+  border-radius: 6px;
+  transition: var(--trans-fast);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--gray-hover);
+  }
+
+  &:disabled {
+    background-color: var(--light-gray);
+    cursor: default;
+  }
 }
 
 .front,
