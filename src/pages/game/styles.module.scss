@@ -1,11 +1,14 @@
 .game {
   margin: 0 auto;
-  width: calc(100vh - 150px - 48px);
+  padding: 16px;
+  width: calc(100vh - 32px - 16px - 70px - 31px + 32px);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .info {
-  height: 150px;
   display: flex;
   column-gap: 8px;
 
@@ -15,11 +18,10 @@
 }
 
 .fieldWrapper {
-  width: calc(100vh - 150px - 48px);
-  height: calc(100vh - 150px - 48px);
+  width: calc(100vh - 32px - 16px - 70px - 31px);
+  height: calc(100vh - 32px - 16px - 70px - 31px);
 }
 
-.buttons {
-  height: 48px;
-  padding-top: 16px;
+.button {
+  align-self: flex-start;
 }

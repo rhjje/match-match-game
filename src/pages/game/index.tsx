@@ -28,9 +28,12 @@ export const GamePage = () => {
         <Field size={16} />
       </div>
 
-      <div className={styles.buttons}>
-        <Button onClick={() => fieldModel.startNewGame()}>New Game</Button>
-      </div>
+      <Button
+        className={styles.button}
+        onClick={() => fieldModel.startNewGame()}
+      >
+        New Game
+      </Button>
     </div>
   );
 };
