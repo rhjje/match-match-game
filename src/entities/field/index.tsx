@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classNames from 'classnames';
 import { useUnit } from 'effector-react';
 import { useGate } from 'effector-react';
@@ -11,7 +9,7 @@ import { fieldModel } from '@model';
 import styles from './styles.module.scss';
 
 interface FieldProps {
-  size: 16 | 20 | 24 | 30 | 36;
+  size: 16 | 25 | 36;
 }
 
 export const Field = ({ size }: FieldProps) => {
