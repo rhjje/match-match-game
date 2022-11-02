@@ -1,6 +1,5 @@
 import classNames from 'classnames';
-import { useUnit } from 'effector-react';
-import { useGate } from 'effector-react';
+import { useStore, useGate } from 'effector-react';
 
 import { Cell, Covers } from '@shared/ui';
 
@@ -15,7 +14,7 @@ interface FieldProps {
 export const Field = ({ size }: FieldProps) => {
   useGate(fieldModel.FieldGate, { size });
 
-  const fieldElements = useUnit(fieldModel.$fieldElements);
+  const fieldElements = useStore(fieldModel.$fieldElements);
 
   return (
     <div className={classNames(styles.field, styles[`size${size}`])}>

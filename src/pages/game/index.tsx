@@ -10,7 +10,7 @@ import { fieldModel } from '@model';
 import styles from './styles.module.scss';
 
 export const GamePage = () => {
-  const pairsMatched = useUnit(fieldModel.$pairsMatched);
+  const pairsMatched = useUnit(fieldModel.$matchedPairs);
   const totalMoves = useUnit(fieldModel.$totalMoves);
 
   return (

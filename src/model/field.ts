@@ -22,10 +22,9 @@ const FieldGate = createGate<FieldGateProps>();
 const toggleCellState = createEvent<string>();
 const resetOpenCells = createEvent();
 const startNewGame = createEvent();
-const addMove = createEvent();
 
 const $fieldElements = createStore<FieldElementsI[]>([]);
-const $pairsMatched = createStore(0);
+const $matchedPairs = createStore(0);
 const $totalMoves = createStore(0);
 
 const debouncedResetOpenCells = debounce({
@@ -33,6 +32,9 @@ const debouncedResetOpenCells = debounce({
   timeout: 1500,
 });
 
+/**
+ * Set new game
+ */
 sample({
   source: FieldGate.state,
   clock: [FieldGate.open, startNewGame],
@@ -67,22 +69,28 @@ sample({
   target: $fieldElements,
 });
 
+/**
+ * Toggle cell state
+ */
 sample({
   source: $fieldElements,
   clock: toggleCellState,
   filter: (source) => source.filter((item) => item.open).length < 2,
   fn: (source, clock) => {
     return source.map((item) =>
-      item.id === clock ? { ...item, open: !item.open } : item,
+      item.id === clock ? { ...item, open: true } : item,
     );
   },
   target: $fieldElements,
 });
 
+/**
+ * Reset open cells
+ */
 sample({
   clock: $fieldElements,
   filter: (source) => source.filter((item) => item.open).length === 2,
-  target: [resetOpenCells, addMove],
+  target: resetOpenCells,
 });
 
 sample({
@@ -100,20 +108,29 @@ sample({
   target: $fieldElements,
 });
 
+/**
+ * Set $matchedPairs
+ */
 sample({
   clock: $fieldElements,
   filter: (clock) => !(clock.filter((cell) => cell.disabled).length % 2),
   fn: (clock) => clock.filter((cell) => cell.disabled).length / 2,
-  target: $pairsMatched,
+  target: $matchedPairs,
 });
 
+/**
+ * Set $totalMoves
+ */
 sample({
   source: $totalMoves,
-  clock: addMove,
+  clock: debouncedResetOpenCells,
   fn: (source) => source + 1,
   target: $totalMoves,
 });
 
+/**
+ * Reset stores when starting a new game
+ */
 reset({
   clock: startNewGame,
   target: $totalMoves,
@@ -124,6 +141,6 @@ export const model = {
   toggleCellState,
   startNewGame,
   $fieldElements,
-  $pairsMatched,
+  $matchedPairs,
   $totalMoves,
 };
