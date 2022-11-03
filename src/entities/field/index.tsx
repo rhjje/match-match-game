@@ -19,6 +19,10 @@ export const Field = ({ size }: FieldProps) => {
   return (
     <div className={classNames(styles.field, styles[`size${size}`])}>
       {fieldElements.map(({ id, icon, open, disabled }) => {
+        if (!icon) {
+          return <div key={id} />;
+        }
+
         const Icon = icon;
         return (
           <Cell

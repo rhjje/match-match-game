@@ -12,7 +12,7 @@ interface FieldGateProps {
 interface FieldElementsI {
   id: string;
   title: string;
-  icon: ({ size, ...props }: IconProps) => JSX.Element;
+  icon: (({ size, ...props }: IconProps) => JSX.Element) | null;
   open: boolean;
   disabled: boolean;
 }
@@ -39,6 +39,8 @@ sample({
   source: FieldGate.state,
   clock: [FieldGate.open, startNewGame],
   fn: ({ size }) => {
+    const finalSize = size - (size % 2);
+
     const arrayOfIcons = Object.keys(Christmas)
       .map((key) => ({
         title: key,
@@ -46,25 +48,37 @@ sample({
       }))
       .sort(() => Math.random() - 0.5);
 
-    const field: Pick<FieldElementsI, 'title' | 'icon'>[] = Array(size);
+    const field: Pick<FieldElementsI, 'title' | 'icon'>[] = Array(finalSize);
 
-    const arrayOfIndexes = Array(size)
+    const arrayOfIndexes = Array(finalSize)
       .fill(null)
       .map((_, i) => i);
 
-    for (let i = 0; i < size; i++) {
+    for (let i = 0; i < finalSize; i++) {
       const randomIndex = Math.floor(Math.random() * arrayOfIndexes.length);
       field[arrayOfIndexes[randomIndex]] = arrayOfIcons[Math.floor(i / 2)];
 
       arrayOfIndexes.splice(randomIndex, 1);
     }
 
-    return field.map((icon) => ({
+    const fieldElements = field.map((icon) => ({
       ...icon,
       id: uuidv4(),
       disabled: false,
       open: false,
     }));
+
+    if (size % 2) {
+      fieldElements.splice(Math.floor(size / 2), 0, {
+        title: 'empty',
+        icon: null,
+        id: uuidv4(),
+        disabled: false,
+        open: false,
+      });
+    }
+
+    return fieldElements;
   },
   target: $fieldElements,
 });
