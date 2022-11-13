@@ -17,7 +17,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@app/*": ["app/*"],
+      "@app": ["src/app"],
       "@pages/*": ["src/pages/*"],
       "@entities/*": ["src/entities/*"],
       "@model": ["src/model"],
