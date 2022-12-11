@@ -9,7 +9,7 @@ import { fieldModel } from '@model';
 
 import styles from './styles.module.scss';
 
-const fieldSize = 25;
+const fieldSize = 36;
 
 export const GamePage = () => {
   const pairsMatched = useUnit(fieldModel.$matchedPairs);

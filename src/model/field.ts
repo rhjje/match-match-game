@@ -3,7 +3,7 @@ import { createGate } from 'effector-react';
 import { debounce, reset } from 'patronum';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Christmas, IconProps } from '@shared/ui';
+import { food } from '@shared/lib/assets';
 
 interface FieldGateProps {
   size: number;
@@ -12,7 +12,7 @@ interface FieldGateProps {
 interface FieldElementsI {
   id: string;
   title: string;
-  icon: (({ size, ...props }: IconProps) => JSX.Element) | null;
+  icon: string | null;
   open: boolean;
   disabled: boolean;
 }
@@ -41,10 +41,10 @@ sample({
   fn: ({ size }) => {
     const finalSize = size - (size % 2);
 
-    const arrayOfIcons = Object.keys(Christmas)
+    const arrayOfIcons = Object.keys(food)
       .map((key) => ({
         title: key,
-        icon: Christmas[key as keyof typeof Christmas],
+        icon: food[key as keyof typeof food],
       }))
       .sort(() => Math.random() - 0.5);
 

@@ -18,18 +18,19 @@ export const Field = memo(({ size }: FieldProps) => {
 
   const cells = useList(
     fieldModel.$fieldElements,
-    ({ id, icon, open, disabled }) => {
+    ({ id, title, icon, open, disabled }) => {
       if (!icon) {
         return <div key={id} />;
       }
 
-      const Icon = icon;
+      const Icon = <img src={icon} alt={title} />;
+
       return (
         <Cell
           key={id}
           onClick={() => fieldModel.toggleCellState(id)}
-          cover={disabled ? <Icon /> : <Covers.Question />}
-          icon={<Icon />}
+          cover={disabled ? Icon : <Covers.Question />}
+          icon={Icon}
           active={open}
           disabled={disabled}
         />
