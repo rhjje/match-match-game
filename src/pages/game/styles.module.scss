@@ -22,6 +22,11 @@
   height: calc(100vh - 32px - 16px - 70px - 31px);
 }
 
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   align-self: flex-start;
 }

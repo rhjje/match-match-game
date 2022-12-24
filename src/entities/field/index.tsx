@@ -10,7 +10,7 @@ import { fieldModel } from '@model';
 import styles from './styles.module.scss';
 
 interface FieldProps {
-  size: 16 | 25 | 36;
+  size: number;
 }
 
 export const Field = memo(({ size }: FieldProps) => {

@@ -6,7 +6,7 @@ import { textStyles } from '@shared/lib/styles-modules';
 
 import styles from './styles.module.scss';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 

@@ -37,7 +37,8 @@ const debouncedResetOpenCells = debounce({
  */
 sample({
   source: FieldGate.state,
-  clock: [FieldGate.open, startNewGame],
+  clock: [FieldGate.state, startNewGame],
+  filter: ({ size }) => Boolean(size),
   fn: ({ size }) => {
     const finalSize = size - (size % 2);
 
