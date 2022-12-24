@@ -1,11 +1,10 @@
-import { useState } from 'react';
-
 import { useUnit } from 'effector-react';
 
 import { InfoCard } from '@entities/info-card';
 import { Field } from '@entities/field';
 
-import { Button, MultiButton } from '@shared/ui';
+import { useLocalStorage } from '@shared/lib/hooks';
+import { Button, MultiButton, MultiButtonOption } from '@shared/ui';
 
 import { fieldModel } from '@model';
 
@@ -18,7 +17,10 @@ const options = [
 ];
 
 export const GamePage = () => {
-  const [fieldSize, setFieldSize] = useState(options[0].value);
+  const [fieldSize, setFieldSize] = useLocalStorage<MultiButtonOption>(
+    'field-size',
+    options[0],
+  );
 
   const pairsMatched = useUnit(fieldModel.$matchedPairs);
   const totalMoves = useUnit(fieldModel.$totalMoves);
@@ -29,19 +31,20 @@ export const GamePage = () => {
         <InfoCard
           title="Pairs matched"
           currentCount={pairsMatched}
-          endCounter={Math.floor(fieldSize / 2)}
+          endCounter={Math.floor(fieldSize.value / 2)}
         />
         <InfoCard title="Total moves" currentCount={totalMoves} />
       </div>
 
       <div className={styles.fieldWrapper}>
-        <Field size={fieldSize} />
+        <Field size={fieldSize.value} />
       </div>
 
       <div className={styles.controls}>
         <Button
           className={styles.button}
           onClick={() => fieldModel.startNewGame()}
+          disabled={!totalMoves}
         >
           New Game
         </Button>
@@ -49,7 +52,8 @@ export const GamePage = () => {
         <MultiButton
           title="Click to change the size of the field"
           options={options}
-          onChangeValue={({ value }) => setFieldSize(value)}
+          defaultOption={fieldSize}
+          onChangeValue={(value) => setFieldSize(value)}
         >
           5x5
         </MultiButton>

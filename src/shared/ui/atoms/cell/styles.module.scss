@@ -6,7 +6,7 @@
   background-color: var(--gray);
   border: none;
   border-radius: 6px;
-  transition: var(--trans-fast);
+  transition: background-color var(--trans-fast);
   overflow: hidden;
 
   &:hover {
@@ -31,7 +31,12 @@
   top: calc(50% - 48px);
   left: calc(50% - 48px);
   backface-visibility: hidden;
-  transition: 1s;
+  transition: transform var(--trans-rotate);
+
+  img {
+    width: 96px;
+    height: 96px;
+  }
 }
 
 .back {

@@ -5,9 +5,14 @@
   padding: 8px 24px;
   border: none;
   cursor: pointer;
-  transition: var(--trans-fast);
+  transition: background-color var(--trans-fast);
 
   &:hover {
     background-color: var(--gray-hover);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--gray);
   }
 }
