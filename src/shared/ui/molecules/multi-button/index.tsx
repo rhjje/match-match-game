@@ -2,25 +2,25 @@ import { useState } from 'react';
 
 import { Button, ButtonProps } from '@shared/ui/atoms';
 
-export interface MultiButtonOption {
+export interface MultiButtonOption<T> {
   label: string;
-  value: number;
+  value: T;
 }
 
-interface MultiButtonProps extends ButtonProps {
-  options: MultiButtonOption[];
-  defaultOption: MultiButtonOption;
-  onChangeValue: (value: MultiButtonOption) => void;
+interface MultiButtonProps<T> extends Omit<ButtonProps, 'children'> {
+  options: MultiButtonOption<T>[];
+  defaultOption: MultiButtonOption<T>;
+  onChangeValue: (value: MultiButtonOption<T>) => void;
 }
 
-export const MultiButton = ({
+export const MultiButton = <T,>({
   options,
   defaultOption,
   onChangeValue,
   ...props
-}: MultiButtonProps) => {
+}: MultiButtonProps<T>) => {
   const [currentOption, setCurrentOption] =
-    useState<MultiButtonOption>(defaultOption);
+    useState<MultiButtonOption<T>>(defaultOption);
 
   const handleChangeValue = () => {
     const currentIndex = options.findIndex(

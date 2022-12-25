@@ -11,10 +11,11 @@ import styles from './styles.module.scss';
 
 interface FieldProps {
   size: number;
+  images: Record<string, string>;
 }
 
-export const Field = memo(({ size }: FieldProps) => {
-  useGate(fieldModel.FieldGate, { size });
+export const Field = memo(({ size, images }: FieldProps) => {
+  useGate(fieldModel.FieldGate, { size, images });
 
   const cells = useList(
     fieldModel.$fieldElements,

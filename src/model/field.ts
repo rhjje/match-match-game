@@ -1,12 +1,11 @@
 import { createEvent, createStore, sample } from 'effector';
 import { createGate } from 'effector-react';
-import { debounce, reset } from 'patronum';
+import { delay, reset } from 'patronum';
 import { v4 as uuidv4 } from 'uuid';
-
-import { food } from '@shared/lib/assets';
 
 interface FieldGateProps {
   size: number;
+  images: Record<string, string>;
 }
 
 interface FieldElementsI {
@@ -27,7 +26,7 @@ const $fieldElements = createStore<FieldElementsI[]>([]);
 const $matchedPairs = createStore(0);
 const $totalMoves = createStore(0);
 
-const debouncedResetOpenCells = debounce({
+const debouncedResetOpenCells = delay({
   source: resetOpenCells,
   timeout: 1500,
 });
@@ -39,13 +38,13 @@ sample({
   source: FieldGate.state,
   clock: [FieldGate.state, startNewGame],
   filter: ({ size }) => Boolean(size),
-  fn: ({ size }) => {
+  fn: ({ size, images }) => {
     const finalSize = size - (size % 2);
 
-    const arrayOfIcons = Object.keys(food)
+    const arrayOfIcons = Object.keys(images)
       .map((key) => ({
         title: key,
-        icon: food[key as keyof typeof food],
+        icon: images[key],
       }))
       .sort(() => Math.random() - 0.5);
 
