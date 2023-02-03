@@ -1,7 +1,6 @@
 .cell {
   width: 100%;
   height: 100%;
-  position: relative;
   perspective: 500px;
   background-color: var(--gray);
   border: none;
@@ -20,13 +19,17 @@
   }
 }
 
+.cellInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
 .front,
 .back {
   width: 96px;
   height: 96px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: calc(50% - 48px);
   left: calc(50% - 48px);

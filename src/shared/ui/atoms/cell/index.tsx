@@ -16,8 +16,10 @@ export const Cell = ({ cover, icon, active, ...props }: CellProps) => {
       {...props}
       className={classNames(styles.cell, active && styles.active)}
     >
-      <div className={styles.front}>{cover}</div>
-      <div className={styles.back}>{icon}</div>
+      <div className={styles.cellInner}>
+        <div className={styles.front}>{cover}</div>
+        <div className={styles.back}>{icon}</div>
+      </div>
     </button>
   );
 };
