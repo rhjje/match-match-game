@@ -3,7 +3,8 @@ import { memo } from 'react';
 import classNames from 'classnames';
 import { useGate, useList } from 'effector-react';
 
-import { Cell, Covers } from '@shared/ui';
+import { covers } from '@shared/lib/assets';
+import { Cell } from '@shared/ui';
 
 import { fieldModel } from '@model';
 
@@ -30,7 +31,7 @@ export const Field = memo(({ size, images }: FieldProps) => {
         <Cell
           key={id}
           onClick={() => fieldModel.toggleCellState(id)}
-          cover={disabled ? Icon : <Covers.Question />}
+          cover={disabled ? Icon : <img src={covers.question} alt="question" />}
           icon={Icon}
           active={open}
           disabled={disabled}
