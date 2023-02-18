@@ -1,1 +1,1 @@
-export * from './multi-button';
+export * from './select';

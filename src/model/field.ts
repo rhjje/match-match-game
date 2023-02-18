@@ -146,7 +146,7 @@ sample({
  * Reset stores when starting a new game
  */
 reset({
-  clock: startNewGame,
+  clock: [FieldGate.state, startNewGame],
   target: $totalMoves,
 });
 

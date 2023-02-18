@@ -8,31 +8,31 @@ import { useOutsideClick } from '@shared/lib/hooks';
 
 import styles from './styles.module.scss';
 
-export interface MultiButtonOption<T> {
+export interface SelectOption<T> {
   label: string;
   value: T;
 }
 
-interface MultiButtonProps<T> extends Omit<ButtonProps, 'children'> {
-  options: MultiButtonOption<T>[];
-  defaultOption: MultiButtonOption<T>;
-  onChangeValue: (value: MultiButtonOption<T>) => void;
+interface SelectProps<T> extends Omit<ButtonProps, 'children'> {
+  options: SelectOption<T>[];
+  defaultOption: SelectOption<T>;
+  onChangeValue: (value: SelectOption<T>) => void;
 }
 
-export const MultiButton = <T,>({
+export const Select = <T,>({
   options,
   defaultOption,
   onChangeValue,
   className,
   ...props
-}: MultiButtonProps<T>) => {
+}: SelectProps<T>) => {
   const selectRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
 
   const [currentOption, setCurrentOption] =
-    useState<MultiButtonOption<T>>(defaultOption);
+    useState<SelectOption<T>>(defaultOption);
 
-  const handleChangeValue = (option: MultiButtonOption<T>) => {
+  const handleChangeValue = (option: SelectOption<T>) => {
     setCurrentOption(option);
     onChangeValue(option);
     setOpen(false);

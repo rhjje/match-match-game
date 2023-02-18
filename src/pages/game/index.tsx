@@ -4,7 +4,7 @@ import { InfoCard } from '@entities/info-card';
 import { Field } from '@entities/field';
 
 import { useLocalStorage } from '@shared/lib/hooks';
-import { Button, MultiButton, MultiButtonOption } from '@shared/ui';
+import { Button, Select, SelectOption } from '@shared/ui';
 import { food, thanksgivingDay } from '@shared/lib/assets';
 
 import { fieldModel } from '@model';
@@ -23,12 +23,12 @@ const optionsImages = [
 ];
 
 export const GamePage = () => {
-  const [fieldSize, setFieldSize] = useLocalStorage<MultiButtonOption<number>>(
+  const [fieldSize, setFieldSize] = useLocalStorage<SelectOption<number>>(
     'field-size',
     optionsFieldSize[0],
   );
   const [images, setImages] = useLocalStorage<
-    MultiButtonOption<Record<string, string>>
+    SelectOption<Record<string, string>>
   >('images', optionsImages[0]);
 
   const pairsMatched = useUnit(fieldModel.$matchedPairs);
@@ -60,14 +60,14 @@ export const GamePage = () => {
         </Button>
 
         <div className={styles.rightColumn}>
-          <MultiButton
+          <Select
             title="Change images"
             options={optionsImages}
             defaultOption={images}
             onChangeValue={(value) => setImages(value)}
           />
 
-          <MultiButton
+          <Select
             title="Change the size of the field"
             options={optionsFieldSize}
             defaultOption={fieldSize}
