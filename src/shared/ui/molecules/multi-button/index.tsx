@@ -1,6 +1,12 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
+import classNames from 'classnames';
+
+import { Icons } from '@shared/ui/icons';
 import { Button, ButtonProps } from '@shared/ui/atoms';
+import { useOutsideClick } from '@shared/lib/hooks';
+
+import styles from './styles.module.scss';
 
 export interface MultiButtonOption<T> {
   label: string;
@@ -17,28 +23,53 @@ export const MultiButton = <T,>({
   options,
   defaultOption,
   onChangeValue,
+  className,
   ...props
 }: MultiButtonProps<T>) => {
+  const selectRef = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState(false);
+
   const [currentOption, setCurrentOption] =
     useState<MultiButtonOption<T>>(defaultOption);
 
-  const handleChangeValue = () => {
-    const currentIndex = options.findIndex(
-      (option) => option.value === currentOption.value,
-    );
-
-    const nextOption =
-      currentIndex + 1 < options.length
-        ? options[currentIndex + 1]
-        : options[0];
-
-    setCurrentOption(nextOption);
-    onChangeValue(nextOption);
+  const handleChangeValue = (option: MultiButtonOption<T>) => {
+    setCurrentOption(option);
+    onChangeValue(option);
+    setOpen(false);
   };
 
+  useOutsideClick(selectRef, () => setOpen(false));
+
   return (
-    <Button {...props} onClick={handleChangeValue}>
-      {currentOption.label}
-    </Button>
+    <div ref={selectRef} className={styles.select}>
+      <Button
+        {...props}
+        className={styles.button}
+        onClick={() => setOpen((prev) => !prev)}
+      >
+        <span>{currentOption.label}</span>
+        <Icons.Arrow
+          className={classNames(styles.arrow, open && styles.arrowUp)}
+        />
+      </Button>
+
+      {open && (
+        <ul className={styles.selectList}>
+          {options.map((option) => (
+            <li className={styles.selectListItem} key={option.label}>
+              <button
+                className={styles.label}
+                onClick={() => handleChangeValue(option)}
+              >
+                <span>{option.label}</span>
+                {currentOption.label === option.label && (
+                  <Icons.Check className={styles.check} />
+                )}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 };
