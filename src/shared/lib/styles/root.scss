@@ -1,4 +1,7 @@
 :root {
+  /**
+  * Colors
+  */
   --white: #ffffff;
   --light-gray: #f2f3f4;
   --gray: #e5e7e9;
@@ -6,6 +9,9 @@
   --text-black: #33353f;
   --green: #489654;
 
+  /**
+  * Transitions
+  */
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
 
   --trans-fast: 0.4s var(--ease);

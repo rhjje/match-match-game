@@ -1,0 +1,24 @@
+$mobile: 768px;
+$tablet: 1024px;
+
+@mixin to($to) {
+  @media (max-width: $to - 1) {
+    @content;
+  }
+}
+
+@mixin from($from) {
+  @media (min-width: $from) {
+    @content;
+  }
+}
+
+@mixin range($from, $to) {
+  @media (min-width: $from) and (max-width: $to - 1) {
+    @content;
+  }
+}
+
+@function adapt($size) {
+  @return calc(var(--site-scale) * calc($size / 1px));
+}
