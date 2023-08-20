@@ -42,7 +42,7 @@ export const Select = <T,>({
   useOutsideClick(selectRef, () => setOpen(false));
 
   return (
-    <div ref={selectRef} className={styles.select}>
+    <div ref={selectRef} className={classNames(styles.select, className)}>
       <Button
         {...props}
         className={styles.button}

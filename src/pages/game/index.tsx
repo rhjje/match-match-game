@@ -61,6 +61,7 @@ export const GamePage = () => {
 
         <div className={styles.rightColumn}>
           <Select
+            className={styles.selectImages}
             title="Change images"
             options={optionsImages}
             defaultOption={images}

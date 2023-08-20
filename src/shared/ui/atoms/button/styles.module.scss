@@ -11,6 +11,11 @@
   cursor: pointer;
   transition: background-color var(--trans-fast);
 
+  @include mobileLandscape {
+    height: 32px;
+    line-height: 32px;
+  }
+
   &:hover {
     background-color: var(--gray-hover);
   }

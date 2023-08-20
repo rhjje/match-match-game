@@ -14,7 +14,7 @@ body {
   }
 
   @include mobile {
-    --site-scale: calc(100vw / 360);
+    --site-scale: calc(100vw / 480);
   }
 }
 

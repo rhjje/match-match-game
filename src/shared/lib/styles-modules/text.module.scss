@@ -3,19 +3,35 @@
 .text22Regular {
   font-size: adapt(22px);
   font-weight: 400;
+
+  @include mobileLandscape {
+    font-size: 22px;
+  }
 }
 
 .text16Regular {
   font-size: adapt(16px);
   font-weight: 400;
+
+  @include mobileLandscape {
+    font-size: 16px;
+  }
 }
 
 .text14Regular {
   font-size: adapt(14px);
   font-weight: 400;
+
+  @include mobileLandscape {
+    font-size: 14px;
+  }
 }
 
 .text13Regular {
   font-size: adapt(13px);
   font-weight: 400;
+
+  @include mobileLandscape {
+    font-size: 13px;
+  }
 }
