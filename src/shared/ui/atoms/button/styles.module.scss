@@ -1,8 +1,12 @@
+@import 'src/shared/lib/styles/mixins';
+
 .button {
+  height: adapt(36px);
   background-color: var(--gray);
   color: var(--text-black);
   border-radius: 6px;
-  padding: 8px 24px;
+  padding: 0 adapt(24px);
+  line-height: adapt(36px);
   border: none;
   cursor: pointer;
   transition: background-color var(--trans-fast);

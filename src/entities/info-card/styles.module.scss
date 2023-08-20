@@ -1,10 +1,12 @@
+@import 'src/shared/lib/styles/mixins';
+
 .infoCard {
   position: relative;
   width: 100%;
-  height: 70px;
+  height: adapt(70px);
   background-color: var(--light-gray);
   border-radius: 6px;
-  padding: 16px 8px 8px;
+  padding: adapt(12px);
   overflow: hidden;
 }
 
@@ -12,12 +14,12 @@
   top: 0;
   left: 0;
   position: absolute;
-  height: 8px;
+  height: adapt(8px);
   background-color: var(--green);
-  border-radius: 6px 4px 4px 0;
+  border-radius: adapt(6px) adapt(4px) adapt(4px) 0;
   transition: width var(--trans-fast);
 }
 
 .completeProgressBar {
-  border-radius: 6px 6px 0 0;
+  border-radius: adapt(6px) adapt(6px) 0 0;
 }

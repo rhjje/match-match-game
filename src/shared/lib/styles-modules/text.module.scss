@@ -1,19 +1,21 @@
+@import 'src/shared/lib/styles/mixins';
+
 .text22Regular {
-  font-size: 22px;
+  font-size: adapt(22px);
   font-weight: 400;
 }
 
 .text16Regular {
-  font-size: 16px;
+  font-size: adapt(16px);
   font-weight: 400;
 }
 
 .text14Regular {
-  font-size: 13px;
+  font-size: adapt(14px);
   font-weight: 400;
 }
 
 .text13Regular {
-  font-size: 13px;
+  font-size: adapt(13px);
   font-weight: 400;
 }

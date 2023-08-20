@@ -9,11 +9,11 @@
 body {
   --site-scale: calc(100vw / 1440);
 
-  @include to($tablet) {
+  @include tablet {
     --site-scale: calc(100vw / 768);
   }
 
-  @include to($mobile) {
+  @include mobile {
     --site-scale: calc(100vw / 360);
   }
 }

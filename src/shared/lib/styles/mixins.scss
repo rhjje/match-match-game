@@ -1,20 +1,14 @@
-$mobile: 768px;
+$mobile: 767px;
 $tablet: 1024px;
 
-@mixin to($to) {
-  @media (max-width: $to - 1) {
+@mixin mobile {
+  @media (max-width: $mobile) {
     @content;
   }
 }
 
-@mixin from($from) {
-  @media (min-width: $from) {
-    @content;
-  }
-}
-
-@mixin range($from, $to) {
-  @media (min-width: $from) and (max-width: $to - 1) {
+@mixin tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }

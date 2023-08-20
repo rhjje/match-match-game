@@ -1,21 +1,20 @@
 @import 'src/shared/lib/styles/mixins';
 
-$controlElements: calc(32px + 70px + 32px + 36px);
+$controlElements: calc(adapt(32px + 70px + 32px + 36px));
 
 .game {
   margin: 0 auto;
-  padding: 16px;
-  max-width: calc(100vh - $controlElements + 32px);
+  padding: adapt(16px);
+  max-width: calc(100vh - $controlElements + adapt(32px));
   height: 100vh;
-  max-height: calc(100vw + $controlElements);
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: adapt(16px);
 }
 
 .info {
   display: flex;
-  column-gap: 8px;
+  column-gap: adapt(8px);
 
   & > * {
     width: 50% !important;
@@ -23,8 +22,9 @@ $controlElements: calc(32px + 70px + 32px + 36px);
 }
 
 .fieldWrapper {
+  position: relative;
   max-width: calc(100vh - $controlElements);
-  height: calc(100vh - $controlElements);
+  padding-bottom: 100%;
 }
 
 .controls {
@@ -34,7 +34,7 @@ $controlElements: calc(32px + 70px + 32px + 36px);
 
 .rightColumn {
   display: flex;
-  column-gap: 8px;
+  column-gap: adapt(8px);
 }
 
 .button {

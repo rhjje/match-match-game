@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 
 import classNames from 'classnames';
 
+import { textStyles } from '@shared/lib/styles-modules';
 import { Icons } from '@shared/ui/icons';
 import { Button, ButtonProps } from '@shared/ui/atoms';
 import { useOutsideClick } from '@shared/lib/hooks';
@@ -58,7 +59,7 @@ export const Select = <T,>({
           {options.map((option) => (
             <li className={styles.selectListItem} key={option.label}>
               <button
-                className={styles.label}
+                className={classNames(styles.label, textStyles.text13Regular)}
                 onClick={() => handleChangeValue(option)}
               >
                 <span>{option.label}</span>
