@@ -23,5 +23,6 @@
   &:disabled {
     cursor: not-allowed;
     background-color: var(--gray);
+    opacity: 0.6;
   }
 }

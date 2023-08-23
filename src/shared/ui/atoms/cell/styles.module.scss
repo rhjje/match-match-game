@@ -26,32 +26,29 @@
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
+  transition: transform var(--trans-rotate);
+}
+
+.active .cellInner {
+  transform: rotateY(180deg);
 }
 
 .front,
 .back {
-  width: 60%;
-  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 20%;
-  left: 20%;
   backface-visibility: hidden;
-  transition: transform var(--trans-rotate);
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
 }
 
 .back {
   transform: rotateY(180deg);
-}
-
-.active .front {
-  transform: rotateY(180deg);
-}
-
-.active .back {
-  transform: rotateY(360deg);
 }
