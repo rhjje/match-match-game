@@ -2,7 +2,6 @@
 
 .select {
   position: relative;
-  display: inline-block;
 }
 
 .button {
@@ -25,7 +24,7 @@
   bottom: calc(100% + 8px);
   right: 0;
   min-width: 100%;
-  padding: 8px;
+  padding: adapt(8px);
   border-radius: 6px;
   background-color: var(--white);
   border: 1px solid var(--gray);
@@ -62,7 +61,7 @@
 
 .check {
   position: relative;
-  color: var(--green) !important;
+  color: var(--green);
 }
 
 @keyframes fade-in {

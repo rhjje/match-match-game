@@ -31,8 +31,10 @@ export const GamePage = () => {
     SelectOption<Record<string, string>>
   >('images', optionsImages[0]);
 
-  const pairsMatched = useUnit(fieldModel.$matchedPairs);
-  const totalMoves = useUnit(fieldModel.$totalMoves);
+  const [pairsMatched, totalMoves] = useUnit([
+    fieldModel.$matchedPairs,
+    fieldModel.$totalMoves,
+  ]);
 
   return (
     <div className={styles.game}>
@@ -52,7 +54,6 @@ export const GamePage = () => {
       <div className={styles.controls}>
         <Button
           title="Start a new game"
-          className={styles.button}
           onClick={() => fieldModel.startNewGame()}
           disabled={!totalMoves}
         >

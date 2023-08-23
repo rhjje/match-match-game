@@ -11,7 +11,7 @@ interface FieldGateProps {
 interface FieldElementsI {
   id: string;
   title: string;
-  icon: string | null;
+  icon: Nullable<string>;
   open: boolean;
   disabled: boolean;
 }
@@ -26,7 +26,7 @@ const $fieldElements = createStore<FieldElementsI[]>([]);
 const $matchedPairs = createStore(0);
 const $totalMoves = createStore(0);
 
-const debouncedResetOpenCells = delay({
+const delayResetOpenCells = delay({
   source: resetOpenCells,
   timeout: 1500,
 });
@@ -109,7 +109,7 @@ sample({
 
 sample({
   source: $fieldElements,
-  clock: debouncedResetOpenCells,
+  clock: delayResetOpenCells,
   fn: (source) => {
     const openCells = source.filter((cell) => cell.open);
 
@@ -137,7 +137,7 @@ sample({
  */
 sample({
   source: $totalMoves,
-  clock: debouncedResetOpenCells,
+  clock: delayResetOpenCells,
   fn: (source) => source + 1,
   target: $totalMoves,
 });
