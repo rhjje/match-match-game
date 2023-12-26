@@ -51,11 +51,12 @@ export const GamePage = () => {
         <Field size={fieldSize.value} images={images.value} />
       </div>
 
-      <div className={styles.controls}>
+      <div className={styles.controls} data-cy="controls">
         <Button
           title="Start a new game"
           onClick={() => fieldModel.startNewGame()}
           disabled={!totalMoves}
+          data-cy="new-game-button"
         >
           New Game
         </Button>
@@ -67,6 +68,7 @@ export const GamePage = () => {
             options={optionsImages}
             defaultOption={images}
             onChangeValue={(value) => setImages(value)}
+            data-cy="select-images"
           />
 
           <Select
@@ -74,6 +76,7 @@ export const GamePage = () => {
             options={optionsFieldSize}
             defaultOption={fieldSize}
             onChangeValue={(value) => setFieldSize(value)}
+            data-cy="select-sizes"
           />
         </div>
       </div>

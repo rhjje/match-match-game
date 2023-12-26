@@ -35,13 +35,17 @@ export const Field = memo(({ size, images }: FieldProps) => {
           icon={Icon}
           active={open}
           disabled={disabled}
+          data-cy="cell"
         />
       );
     },
   );
 
   return (
-    <div className={classNames(styles.field, styles[`size${size}`])}>
+    <div
+      className={classNames(styles.field, styles[`size${size}`])}
+      data-cy="field"
+    >
       {cells}
     </div>
   );
