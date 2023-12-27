@@ -39,7 +39,7 @@ describe('Main page layout', () => {
 
   it('Select images and sizes should exists on the main page', () => {
     cy.getByData('select-images').should('exist');
-    cy.getByData('select-sizes').should('exist');
+    cy.getByData('select-size').should('exist');
   });
 });
 
@@ -91,4 +91,91 @@ describe('Main page interactive', () => {
 
     cy.getByData('new-game-button').should('not.have.attr', 'disabled');
   });
+
+  function testSelect(name: string, dataAttr: string) {
+    it(name, () => {
+      let value: string;
+      cy.getByData(dataAttr).click();
+
+      cy.getByData('select-options')
+        .find('span')
+        .then(($span) => {
+          const { length } = $span;
+          const min = 0;
+          const max = length - 1;
+          const randomIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+
+          cy.wrap($span)
+            .eq(randomIndex)
+            .should(($span) => (value = $span.text()))
+            .click();
+        });
+
+      cy.getByData(dataAttr)
+        .find('span')
+        .should(($span) => {
+          const currentValue = $span.text();
+
+          expect(value).equal(currentValue);
+        });
+    });
+  }
+
+  testSelect('Select images should select value', 'select-images');
+  testSelect('Select size should select value', 'select-size');
+
+  function testSelectLocalStorage(
+    name: string,
+    dataAttr: string,
+    localStorageKey: string,
+  ) {
+    it(name, () => {
+      cy.clearAllLocalStorage();
+
+      cy.getByData(dataAttr).click();
+
+      cy.getByData('select-options')
+        .find('li')
+        .then(($li) => {
+          const { length } = $li;
+          const min = 0;
+          const max = length - 1;
+          const randomIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+
+          cy.wrap($li).eq(randomIndex).click();
+        });
+
+      cy.getAllLocalStorage().then(($data) => {
+        expect(localStorageKey in $data[Cypress.env('baseUrl')]).equal(true);
+      });
+    });
+  }
+
+  testSelectLocalStorage(
+    'Selected images should be saved to localstorage',
+    'select-images',
+    'images',
+  );
+  testSelectLocalStorage(
+    'Selected size should be saved to localstorage',
+    'select-size',
+    'field-size',
+  );
+
+  function testChangingSizeField(name: string, size: number) {
+    it(name, () => {
+      cy.getByData('select-size').click();
+      cy.getByData(`select-option-value-${size}`).click();
+
+      cy.getByData('field')
+        .children()
+        .then(($cells) => {
+          expect($cells.length).equal(size);
+        });
+    });
+  }
+
+  testChangingSizeField('The size of the playing field should 25 cells', 25);
+  testChangingSizeField('The size of the playing field should 36 cells', 36);
+  testChangingSizeField('The size of the playing field should 16 cells', 16);
 });

@@ -76,7 +76,7 @@ export const GamePage = () => {
             options={optionsFieldSize}
             defaultOption={fieldSize}
             onChangeValue={(value) => setFieldSize(value)}
-            data-cy="select-sizes"
+            data-cy="select-size"
           />
         </div>
       </div>

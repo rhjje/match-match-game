@@ -55,9 +55,13 @@ export const Select = <T,>({
       </Button>
 
       {open && (
-        <ul className={styles.selectList}>
+        <ul className={styles.selectList} data-cy="select-options">
           {options.map((option) => (
-            <li className={styles.selectListItem} key={option.label}>
+            <li
+              className={styles.selectListItem}
+              key={option.label}
+              data-cy={`select-option-value-${option.value}`}
+            >
               <button
                 className={classNames(styles.label, textStyles.text13Regular)}
                 onClick={() => handleChangeValue(option)}
