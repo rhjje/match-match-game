@@ -15,7 +15,7 @@ interface InfoCardProps {
 export const InfoCard = memo(
   ({ title, currentCount, endCounter }: InfoCardProps) => {
     return (
-      <div className={styles.infoCard}>
+      <div className={styles.infoCard} data-cy="info-card">
         {endCounter && (
           <div
             className={classNames(
@@ -23,12 +23,16 @@ export const InfoCard = memo(
               currentCount === endCounter && styles.completeProgressBar,
             )}
             style={{ width: `${(currentCount / endCounter) * 100}%` }}
+            data-cy="info-card-progress-bar"
           />
         )}
-        <div className={classNames(styles.title, textStyles.text16Regular)}>
+        <div
+          className={classNames(styles.title, textStyles.text16Regular)}
+          data-cy="info-card-title"
+        >
           {title}
         </div>
-        <div className={styles.info}>
+        <div className={styles.info} data-cy="info-card-info">
           <span
             className={classNames(
               styles.currentNumber,
